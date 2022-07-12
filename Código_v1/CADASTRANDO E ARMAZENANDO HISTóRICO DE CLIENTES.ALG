@@ -1,21 +1,21 @@
-algoritmo "Cadastrando e armazenando histórico de clientes"
+algoritmo "Cadastrando e armazenando hist�rico de clientes"
 
 var
-   nomeCliente: vetor  [1..10]  de caractere //clientes
-   localViagem: vetor [1.. 10] de caractere //destino
-   dataNasc: vetor [1..10] de inteiro  
-   quantidade: inteiro  //cont
-   qtosDestinos:inteiro //contt
+   nomeCliente: vetor  [1..10]  de caractere
+   localViagem: vetor [1.. 10] de caractere
+   dataNasc: vetor [1..10] de inteiro
+   quantidade: inteiro
+   qtosDestinos:inteiro
    opcaoEscolha: inteiro
-   a, b, c, d: inteiro   //z, x, y, k
+   a, b, c, d: inteiro
 
 inicio
 
-   Enquanto verdadeiro faça // Aqui acontece o looping do cadastro //
+   Enquanto verdadeiro fa�a // Aqui acontece o looping do cadastro //
 
 
       escreval ("                                ")
-      Escreval (" <=== Olá! Seja bem-vindo!!!===> ")
+      Escreval (" <=== Ol�! Seja bem-vindo!!!===> ")
       escreval ("=====================================")
       escreval (" =============== MENU ===============")
       escreval (" Digite 1 - Para cadastrar clientes: ")
@@ -33,15 +33,15 @@ inicio
          Escreval ("Quantos clientes deseja cadastrar: ")
          leia(quantidade)  //Quantidade armazenada.//
          limpatela
-	  //O looping será determinado até a quantidade inserida em quantidade
-         para a de 1 até quantidade faça
-	    escreval("Digite o nome do cliente: ")
-            leia(cliente[a])
+         //O looping ser� determinado at� a quantidade inserida em quantidade
+         para a de 1 at� quantidade fa�a
+            escreval("Digite o nome do cliente: ")
+            leia(nomeCliente[a])
             escreval ("Digite a data de nascimento do cliente: ")
             leia (dataNasc[a])
          fimpara
 
-         para b de 1 até quantidade faça
+         para b de 1 at� quantidade fa�a
             escreval(" Cliente:  ", nomeCliente[b])
             escreval ("Data de nascimento:   " ,dataNasc[b])
 
@@ -53,7 +53,7 @@ inicio
          Escreval ("Quantos Locais de destino deseja cadastrar? ")
          leia(qtosDestinos)
          limpatela
-         para c de 1 até qtosDestinos faça
+         para c de 1 at� qtosDestinos fa�a
             escreval(" Digite o Local de destino: ")
             leia(localViagem[c])
          fimpara
@@ -61,7 +61,7 @@ inicio
 
 
       caso 3
-         para b de 1 até quantidade faça
+         para b de 1 at� quantidade fa�a
             escreval(" Cliente:  ", nomeCliente[b])
             escreval ("Data de nascimento:   " ,dataNasc[b])
 
@@ -69,13 +69,13 @@ inicio
 
 
       caso 4
-         para d de 1 até qtosDestinos faça
+         para d de 1 at� qtosDestinos fa�a
             escreval ("Local de destino adicionado:  " ,localViagem[d])
          fimpara
 
 
-      fimpara
 
       fimescolha
    fimenquanto
+
 Fimalgoritmo
