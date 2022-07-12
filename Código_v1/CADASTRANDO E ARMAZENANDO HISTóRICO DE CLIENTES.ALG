@@ -1,4 +1,4 @@
-algoritmo "Cadastrando e armazenando histï¿½rico de clientes"
+algoritmo "Cadastrando e armazenando histórico de clientes"
 
 var
    nomeCliente: vetor  [1..10]  de caractere
@@ -11,11 +11,11 @@ var
 
 inicio
 
-   Enquanto verdadeiro faï¿½a // Aqui acontece o looping do cadastro //
+   Enquanto verdadeiro faça // Aqui acontece o looping do cadastro //
 
 
       escreval ("                                ")
-      Escreval (" <=== Olï¿½! Seja bem-vindo!!!===> ")
+      Escreval (" <=== Olá! Seja bem-vindo!!!===> ")
       escreval ("=====================================")
       escreval (" =============== MENU ===============")
       escreval (" Digite 1 - Para cadastrar clientes: ")
@@ -33,15 +33,15 @@ inicio
          Escreval ("Quantos clientes deseja cadastrar: ")
          leia(quantidade)  //Quantidade armazenada.//
          limpatela
-         //O looping serï¿½ determinado atï¿½ a quantidade inserida em quantidade
-         para a de 1 atï¿½ quantidade faï¿½a
+         //O looping será determinado até a quantidade inserida em quantidade
+         para a de 1 até quantidade faça
             escreval("Digite o nome do cliente: ")
             leia(nomeCliente[a])
             escreval ("Digite a data de nascimento do cliente: ")
             leia (dataNasc[a])
          fimpara
 
-         para b de 1 atï¿½ quantidade faï¿½a
+         para b de 1 até quantidade faça
             escreval(" Cliente:  ", nomeCliente[b])
             escreval ("Data de nascimento:   " ,dataNasc[b])
 
@@ -53,7 +53,7 @@ inicio
          Escreval ("Quantos Locais de destino deseja cadastrar? ")
          leia(qtosDestinos)
          limpatela
-         para c de 1 atï¿½ qtosDestinos faï¿½a
+         para c de 1 até qtosDestinos faça
             escreval(" Digite o Local de destino: ")
             leia(localViagem[c])
          fimpara
@@ -61,7 +61,7 @@ inicio
 
 
       caso 3
-         para b de 1 atï¿½ quantidade faï¿½a
+         para b de 1 até quantidade faça
             escreval(" Cliente:  ", nomeCliente[b])
             escreval ("Data de nascimento:   " ,dataNasc[b])
 
@@ -69,7 +69,7 @@ inicio
 
 
       caso 4
-         para d de 1 atï¿½ qtosDestinos faï¿½a
+         para d de 1 até qtosDestinos faça
             escreval ("Local de destino adicionado:  " ,localViagem[d])
          fimpara
 
